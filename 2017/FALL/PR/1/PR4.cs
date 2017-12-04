@@ -5,6 +5,7 @@ namespace PR5
 {
     class Program
     {
+	// ---check--- вы неправильно поняли задачу: надо было считывать числа пока не встретится 0, и найти в этой последовательности самую длинную подпоследовательность чётных чисел
         static void Main(string[] args)
         {
             int b = int.Parse(Console.ReadLine());

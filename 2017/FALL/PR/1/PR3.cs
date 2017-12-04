@@ -8,6 +8,7 @@ namespace PR2
         static void Main(string[] args)
         {
             int x = 32;
+	    // ---check--- без строк и массивов надо было решать эти задачи
             string s = "";
             while (x > 0)
             {

@@ -14,6 +14,9 @@ namespace Semistrovka1
 
             bool possible = false;
 
+            // ---check--- как-то странно у вас пешки ходят.
+	    // почему Math.Abs(num1 - num2) <= 2 ?
+	    // по идее пешки идут прямо по одной линии
             if (Math.Abs(num1 - num2) <= 2)
             {
                 if (Math.Abs(lit1 - lit2) <= 1 && Math.Abs(num1 - num2) == 1)

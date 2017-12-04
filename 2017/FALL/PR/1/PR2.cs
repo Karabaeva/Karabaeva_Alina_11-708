@@ -5,6 +5,7 @@ namespace SEM2
 {
     class Program
     {
+	// ---check--- можно воспользоваться суммой арифм.прогресси
         static void Main(string[] args)
         {
             int a = int.Parse(Console.ReadLine());

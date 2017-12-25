@@ -22,6 +22,7 @@ namespace Semistrovka5
                             simple = false;
                             break;
                         }
+			// ---check--- зачем это?
                         simple = true;
                     }
                     if (simple) sum += i;

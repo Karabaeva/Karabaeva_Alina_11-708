@@ -12,6 +12,7 @@ namespace Semester1b
             if (x > 1)
                 return 1;
             else 
+			// ---check--- не надо было считать степень x, а надо было домножать предыдущий результат на x.
                 return Math.Pow((-1), k) * Math.Pow(x, k) * (1 + n);
             // ИЛИ 
             //int n = int.Parse(Console.ReadLine());

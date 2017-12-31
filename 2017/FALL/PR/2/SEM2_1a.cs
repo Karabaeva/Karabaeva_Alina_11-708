@@ -15,6 +15,7 @@ namespace SEM1a
         static double Function(double x, int k)
         {
             int a = int.Parse(Console.ReadLine());
+			// ---check--- не надо было считать степень x, а надо было домножать предыдущий результат на x.
             return Math.Pow((-1 + a), k) * x * (Math.Pow(Math.Log(x), k)) / Factorial(k);
 
         }

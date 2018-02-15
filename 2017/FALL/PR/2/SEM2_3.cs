@@ -8,6 +8,7 @@ namespace SEM2_3
         {
             return (-(Math.Sin(Math.Tan(x))));
         }
+		// ---check--- границы бы тоже надо было сделать параметрами
         static double LeftTriangles(double n) //Часть 1
         {
             double sum = 0;
@@ -19,6 +20,7 @@ namespace SEM2_3
             }
             return sum;
         }
+		
         static double RightTriangles(double n) // Часть 2
         {
             double sum = 0;
@@ -47,6 +49,7 @@ namespace SEM2_3
             int a = 2;
             double h = (b - a) / n; //шаг
             n /= 2;
+			//---check--- почему два цикла?
             double sum1 = 0;
               for (int i = 1; i<n; i++)
                    sum1 += Function(a + 2 * i* h);
@@ -67,8 +70,10 @@ namespace SEM2_3
             Random random = new Random();
             for (int i = 0; i < n; i++)
             {
+				//---check--- константы лучше выносить в поля класса
                 double x1 = RandomMK(2, 3, random);
-                double y1 = RandomMK(0, 0.48, random);
+				//---check--- почему именно 0.48?
+				double y1 = RandomMK(0, 0.48, random);
                 if (y1 <= Function(x1)) koll++;
             }
             n = 1.0 / n;

@@ -9,6 +9,7 @@ namespace SEM2_2
         {
             return (1 / ((4 * k - 2) * (4 * k - 1))) + (2 * Math.Log(2));
         }
+		// ---check--- абсолютено неинформативные названия методов
         static double Fun1(double e)
         {
             double previous = 0;
@@ -27,7 +28,8 @@ namespace SEM2_2
 
             return sum;
         }
-        static double Fun(double e)
+        // ---check--- абсолютено неинформативные названия методов
+		static double Fun(double e)
         {
             return (8 * Fun1(e));
         }

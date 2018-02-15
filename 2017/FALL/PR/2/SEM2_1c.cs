@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 
 
 namespace SEM1b  //Это 3 подзадание 
@@ -14,6 +14,7 @@ namespace SEM1b  //Это 3 подзадание
 
         static double Function(double x, int k)
         {
+			// ---check--- не надо было считать степень x, а надо было домножать предыдущий результат на x.
             return (Math.Pow(x, (2 * k + 1)) / Factorial(k));
         }
 
